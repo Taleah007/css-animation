@@ -20,7 +20,7 @@ div {
 .logo  {
   width: 50px;
   height: auto;
-  background: url('instagram-logo') 
+  background: url('linkedin-logo') 
   background-size:cover;
   animation:spin 3s linear infinite; 
 }
