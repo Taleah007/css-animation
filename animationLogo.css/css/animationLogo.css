@@ -11,12 +11,9 @@
     width: 100px;
     height: 100px;
     background-color: red;
-    animation-name: animatedcircle;
-    border-radius: 200%;
-    transform: rotateY(200px)
-    animation-duration: 4s;
-    animation-iteration-count: infinite;    
-  } 
+    filter: grayscale(0%); /* Start with no grayscale (full color) */
+    transition: filter 2s linear; /* Transition over 5 seconds */
+  }
   
   .logo  {
     width: 50px;
@@ -39,10 +36,19 @@
       display:flex;
       justify-content: center;
       align-items: center;
-      height: 10vh;
+      height: h;
     
   }
   .logo:hover {
     animation-play-state: paused; 
   }
   
+  .square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: filter 1s;
+filter: hue-rotate(240deg); 
+
+}
+

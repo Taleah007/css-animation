@@ -1,9 +1,16 @@
-@keyframes animatedsquare {
-  0%   {background-color: rgb(0, 255, 55);}
-  25%  {background-color: rgb(255, 0, 174);}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-  animation-duration
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: red; /* Initial color */
+  transition: filter 1s; /* Adds a smooth transition effect */
+
+  /* Initial filter property - blue */
+  filter: hue-rotate(240deg); /* Blue filter */
+}
+
+/* Change the filter property when the square is hovered */
+.square:hover {
+  filter: hue-rotate(0deg); /* Red filter on hover */
 }
 
 div {
@@ -18,7 +25,7 @@ div {
 } 
 
 .logo  {
-  width: 50px;
+  width: 200px;
   height: auto;
   background: url('linkedin-logo') 
   background-size:cover;
@@ -34,13 +41,7 @@ div {
         transform: rotate(350deg);
     }
 }
-.logos{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-  
-}
+
 .logo:hover {
   animation-play-state: paused; 
 }
