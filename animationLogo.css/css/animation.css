@@ -1,12 +1,11 @@
- /* The animation code */
-@keyframes animatedcircle {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
+@keyframes animatedsquare {
+  0%   {background-color: rgb(0, 255, 55);}
+  25%  {background-color: rgb(255, 0, 174);}
   50%  {background-color: blue;}
   100% {background-color: green;}
+  animation-duration
 }
 
-/* The element to apply the animation to */
 div {
   width: 100px;
   height: 100px;
@@ -15,24 +14,24 @@ div {
   border-radius: 200%;
   transform: rotateY(200px)
   animation-duration: 4s;
-  animation-iteration-count: infinite;    
+  animation-iteration-count:infinite;    
 } 
 
 .logo  {
   width: 50px;
   height: auto;
-  background: url('instagram-logo.png') 
-  background-size: cover;
-  animation: spin 4s linear infinite; 
+  background: url('instagram-logo') 
+  background-size:cover;
+  animation:spin 3s linear infinite; 
 }
 
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);
+        transform: rotate(2deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(350deg);
     }
 }
 .logos{
